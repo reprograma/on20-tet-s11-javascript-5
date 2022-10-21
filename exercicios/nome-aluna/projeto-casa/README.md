@@ -1,10 +1,8 @@
 # Projetinho 📓  
 
-## Nome do Projeto
+## Buscando digimons
 
-- Explicação do projeto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+- Utilize o método fetch ou a biblioteca axios para consumir o endpoint da [Digimon API](https://digimon-api.vercel.app/) que retorna um digimon pelo seu nome, deixando a usuária entrar com o nome de um digimon e ao clicar num botão, as informações do digimon serão carregadas! Dica: mostre uma lista com os nomes dos digimons para a usuária, isso pode ser feito através do endpoint que retorna todos os digimons.
 ---
 
 Terminou o projetinho? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
