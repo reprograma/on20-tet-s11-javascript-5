@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +11,25 @@ h1 {
     padding: 30px 0 20px ;
 }
 main {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+#sec-buttons {
+    width: 70%;
     min-height: 100vh;
     margin: auto;
     padding-top: 20px;
-    /* background-color: rgb(195, 183, 206); */
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+}
+#sec-cards{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 button {
     margin: auto;
@@ -28,8 +40,7 @@ button {
     padding: 5px;
     cursor: pointer;   
 }
-.card {
-   
+.card {   
     border: 1px groove rgb(170, 12, 12);
     box-shadow: 3px 3px 4px rgb(211, 111, 111);
     border-radius: 10px;
@@ -39,6 +50,7 @@ button {
     align-items:center;
     padding: 50px 0;
     width: 250px;
+    height: 350px;
 }
 .img-card {
     width: 100px;
