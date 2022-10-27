@@ -1,6 +1,5 @@
 let container = document.getElementById('digi')
 let dataList = document.getElementById ('nome')
-let imagemDigi = document.getElementById ('img')
   
 let getDigimon = async () => {
   try{
@@ -20,3 +19,5 @@ getDigimon().then(digimons => {
         dataList.appendChild(itemDaLista)
     });
 })
+
+
