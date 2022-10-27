@@ -9,9 +9,11 @@ let chamarDigimon = async () => {
             let li = document.createElement('li')
             
             li.innerHTML = digimon.name
-            // li.addEventListener('click', buscarDigimonPorNome(li.innerText))
+            li.addEventListener('click', () => {
+                buscarDigimonPorNome(li.innerText)
+            })
             // li.onclick = buscarDigimonPorNome(li.innerText)
-            li.setAttribute("onclick", "buscarDigimonPorNome(this.innerText)")
+            // li.setAttribute("onclick", "buscarDigimonPorNome(this.innerText)")
             ul.append(li)
         })
 
