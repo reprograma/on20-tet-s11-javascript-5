@@ -1,4 +1,3 @@
-const container = getElementBy ("demo")
 const mains = async function main() {
     const digimon = await getListaDigimons()
     digimon.forEach((i) => {
