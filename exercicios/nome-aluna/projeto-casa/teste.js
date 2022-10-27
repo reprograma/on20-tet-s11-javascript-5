@@ -1,18 +1,17 @@
-const pokemonName = document.querySelector('.pokemon-name')
-const pokemonNumber = document.querySelector('.pokemon-number')
-const pokemonImage = document.querySelector('.pokemon-image')
+const digimonName = document.querySelector('.digimon-name')
+const digimonNumber = document.querySelector('.digimon-number')
+const digimonImage = document.querySelector('.digimon-image')
 
 const form = document.querySelector('.form')
 const input = document.querySelector('.input-search')
-const buttonPrev = document.querySelector('.btn-prev');
-const buttonNext = document.querySelector('.btn-next');
+// const buttonPrev = document.querySelector('.btn-prev');
+// const buttonNext = document.querySelector('.btn-next');
 
-let searchPokemon = 1
+// let searchDigimon = 1
 
-const fetchDigimon = async () => {
-    const APIResponse = await fetch(`https://digimon-api.vercel.app/api/digimon`);
+const fetchDigimon = async (digimon) => {
+    const APIResponse = await fetch(`https://digimon-api.vercel.app/api/digimon/name/${digimon}`);
 
-    console.log(APIResponse)
 
     if (APIResponse.status === 200) {
         const data = await APIResponse.json();
@@ -20,47 +19,47 @@ const fetchDigimon = async () => {
     }
 }
 
-const renderPokemon = async (pokemon) => {
+const renderDigimon = async (digimon) => {
 
-    pokemonName.innerHTML = 'Loading...';
-    pokemonNumber.innerHTML = '';
+    digimonName.innerHTML = 'Loading...';
+    digimonNumber.innerHTML = '';
 
-    const data = await fetchDigimon();
+    const data = await fetchDigimon(digimon);
 
-    console.log(data)
 
     if (data) {
-        pokemonImage.style.display = 'block';
-        pokemonName.innerHTML = data.name;
-        pokemonNumber.innerHTML = data.level;
-        pokemonImage.src = data.img;
+        digimonImage.style.display = 'block';
+        digimonName.innerHTML = data[0].name;
+        digimonNumber.innerHTML = data[0].level;
+        digimonImage.src = data[0].img;
         input.value = '';
-        searchPokemon = data.name;
+        // searchDigimon = data[0].name;
+
     } else {
-        pokemonImage.style.display = 'none';
-        pokemonName.innerHTML = 'Not found :c';
-        pokemonNumber.innerHTML = '';
+        digimonImage.style.display = 'none';
+        digimonName.innerHTML = 'Not found :c';
+        digimonNumber.innerHTML = '';
     }
 }
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    renderPokemon(input.value.toLowerCase());
+    renderDigimon(input.value.toLowerCase());
 
 });
 
-buttonPrev.addEventListener('click', () => {
-    if (searchPokemon > 1) {
-        searchPokemon -= 1;
-        renderPokemon(searchPokemon)
-    }
+// buttonPrev.addEventListener('click', () => {
+//     if (searchPokemon > 1) {
+//         searchPokemon -= 1;
+//         renderPokemon(searchPokemon)
+//     }
 
-});
+// });
 
-buttonNext.addEventListener('click', () => {
-    searchPokemon += 1;
-    renderPokemon(searchPokemon)
+// buttonNext.addEventListener('click', () => {
+//     searchPokemon += 1;
+//     renderPokemon(searchPokemon)
 
-});
+// });
 
-renderPokemon(searchPokemon)
+// renderDigimon(searchDigimon)

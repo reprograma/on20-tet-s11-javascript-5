@@ -1,31 +1,26 @@
-const input = document.getElementById('input')
-const imgDigi = document.querySelector('#imagem')
-const title = document.querySelector('.title')
-const texto = document.querySelector('.texto')
-
-const fetchApi = async () => {
-    const response = await fetch(`https://digimon-api.vercel.app/api/digimon`)
-    const data = await response.json()
-
-    return data
+const createSection = (digimon) => {
+    return `
+        <div class="digimon">
+        <h2 class="name">${digimon.name}</h2>
+        </div>
+    `
 }
 
-function digiApi() {
-    input.addEventListener('change', async ({ target }) => {
-        const digiArr = await fetchApi()
+const container = document.getElementById('demo')
 
-        const find = digiArr.find(({ name }) => name.toLowerCase() === target.value.toLowerCase())
-
-        const imagem = find.img
-        const { name, level } = find
-
-        texto.innerText = `${name} é um tipo de digimon ${level}`
-        title.innerHTML = name
-        imgDigi.src = imagem
-
-        return find
-    })
+const getDigimons = async () => {
+    try {
+        const response = await fetch(`https://digimon-api.vercel.app/api/digimon`)
+        const digimons = await response.json()
+        // const ourDigimons = digimons.slice(10, 15)
+        return digimons
+    }     
+    catch(err) {
+        console.error ("Capturei um erro: ", err)
+        
+    }
 
 }
+getDigimons().then((digimons) => digimons.map((digimon) => container.innerHTML += createSection(digimon)))
 
-window.onload = () => digiApi()
+//js quebra a foto do digidex
