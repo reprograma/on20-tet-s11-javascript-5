@@ -1,5 +1,7 @@
-const main = document.getElementById('main');
-main.insertAdjacentHTML('beforebegin', '<h1> Digimons </h1>');
+const secButtons = document.getElementById('sec-buttons');
+const secCards = document.getElementById('sec-cards')
+const body = document.querySelector('body')
+body.insertAdjacentHTML('beforebegin', '<h1> Digimons </h1>');
 // beforebegin - antes do elemento
 // afterbegin - Dentro do elemento, antes de seu primeiro filho (childNode)
 // beforeend - Dentro do elemento, após seu último filho (childNode) 
@@ -14,20 +16,15 @@ function createCards(digimon) {
     </div>
 `
 }
-async function showCards(e) {
+async function showCards(nome) {
 
     try {
         const response = await fetch(`https://digimon-api.vercel.app/api/digimon`)
         const dado = await response.json()
         dado.forEach(digimon => {
-
-            if (e === digimon.name){
-                const div = document.createElement('div')
-                div.innerHTML = createCards(digimon)
-                main.appendChild(div)
-            }          
-          
-        })
+            if (nome === digimon.name) {
+                secCards.innerHTML = createCards(digimon)
+            }})
     } catch (err) {
         console.error('Capturei um erro: ', err);
     }
@@ -35,12 +32,12 @@ async function showCards(e) {
 async function getDigimons() {
     try {
         const response = await fetch(`https://digimon-api.vercel.app/api/digimon`)
-        const dado = await response.json()       
-        dado.forEach( digimon => {
+        const dado = await response.json()
+        dado.forEach(digimon => {
             const button = document.createElement('button')
             button.innerText = digimon.name
-            main.appendChild(button)
-            button.addEventListener('click', ()=> showCards(digimon.name))
+            secButtons.appendChild(button)
+            button.addEventListener('click', () => showCards(digimon.name))
 
         });
     }
