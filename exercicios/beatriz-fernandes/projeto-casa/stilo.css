@@ -1,0 +1,73 @@
+.card-body{
+    margin-left: 20rem;
+}
+
+
+#demo{
+    justify-content: space-around;
+    display: block;
+    color: #1c140d;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #230343;
+}
+
+.titulo{
+    background-color:rgb(215, 157, 157);
+    border-radius: 7px;
+    border-top: 5px double greenyellow;
+    border-left: 5px solid magenta;
+    border-right: 5px solid magenta;
+    border-bottom: 5px solid blue;
+    font-size: 20px;
+}
+
+.titulo:hover{
+font-size: 30px;
+color: #daaeaa;
+border:3px dotted #c261bf;
+background-color:  #230343;;
+}
+
+
+.imagem{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 20rem;
+    border: 2px dashed rgb(242, 0, 255);   
+}
+
+.imagem:hover{
+    width: 350px;
+    height: 400px;
+}
+
+#input{
+    float:right; 
+    padding: 5px;
+}
+
+button{
+    float:right; 
+    margin-right: 15px;
+    margin-left: 30px;
+    background-color: #ba01ff;
+    border:  2px solid  #ba01ff;
+    padding: 10px;
+    color: bisque;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: #c261bf;
+}
+
+#container-input{
+    align-items: center;
+    /* display: flex; */
+    flex-direction:initial;
+    margin-top: 30px;
+}
