@@ -1,0 +1,148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding: 10px;
+    background-color:  #007de9;
+
+}
+.main-title{
+    font-weight: bolder;
+    font-size: 4em;
+    text-align: center;
+    color: #f2b405;
+}
+
+a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+a i{
+    color:rgb(77, 77, 12);
+    margin: 5px 0;
+}
+
+body{
+    background-color: #96bed9;
+}
+
+
+.container{
+    display: flex;  
+    margin: 15px;
+    padding: 10px;
+}
+
+.search
+{
+    border:1px solid #ccc;
+    margin: 15px;
+    padding: 9px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    width: 210px;
+}
+
+
+.digimons-list
+{
+    width: 350px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    margin: 5px;
+}
+
+.digimons-list-container
+{
+    margin: 5px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.digimons-list ul
+{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.digimons-list ul li
+{
+    padding: 5px;
+    margin: 5px;
+    background-color: #007de9;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.digimons-list ul li:hover, .digimons-list ul li.active
+{
+    color: #f2b405;
+}
+
+.digimons-details
+{
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    margin: 5px;
+}
+
+.card{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.card .image{
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.card .title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #007de9;
+}
+
+.card .text{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 5px;
+    }
+
+    .digimons-list
+    {
+        width: 100%;
+    }
+
+    .search
+    {
+        width: -webkit-fill-available;
+    }
+    
+    .card .image{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .main-title{
+        font-size: 2.5em;
+    }
+}
