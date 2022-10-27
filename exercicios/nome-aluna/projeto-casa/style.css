@@ -1,0 +1,8 @@
+*{
+    font-family: Arial;
+    display: flexbox;
+}
+.titulo{
+    text-align: center;
+    color:#3867d6 ;
+}
