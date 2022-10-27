@@ -4,11 +4,13 @@ let chamarDigimon = async () => {
         const jsonDigimons = await response.json()
         console.log(jsonDigimons)
         let body = document.querySelector('body')
-        jsonDigimons.slice(1,20).map((digimon)=>{
+        let ul = document.querySelector('ul')
+        jsonDigimons.map((digimon)=>{
            
-            let p = document.createElement('p')
-            p.innerHTML = digimon.name
-            body.append(p)
+            let li = document.createElement('li')
+            li.innerHTML = digimon.name
+            body.append(ul)
+            ul.append(li)
         })
 
     } catch (error) {
