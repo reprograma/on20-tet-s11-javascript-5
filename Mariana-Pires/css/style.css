@@ -1,0 +1,30 @@
+*{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 5px;
+    max-width: 55%;
+    margin-left: 35rem;
+    align-self: center;}
+
+button{
+    background-color: #9a48ae;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 15px;
+    border-style: none;
+    font-weight: 400;
+}
+
+body{
+    background-image: url(/Mariana-Pires/img/digidex.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: inline-block;
+
+}
