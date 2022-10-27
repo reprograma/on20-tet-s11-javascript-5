@@ -1,0 +1,67 @@
+body {
+    background-color: #dbebf6;
+    color:blueviolet; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    background-color: darkslategrey;
+    border: solid;
+    border-radius: 5px;
+    color:cadetblue;
+    text-align: center;
+}
+
+
+ul {
+    border: solid;
+    border-radius: 20px;
+    list-style-position: inside;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    width: 170px;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divisao_digimon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto_autora {
+    align-items: right;  
+    padding: 10px;
+    width: 50px;  
+}
+
+.autora {
+    background-color: darkslategrey;
+    border-radius: 5px;
+    border: solid;
+    color:cadetblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sublinhado {
+    text-decoration: line-through;
+}
+
+.busca_digimon {
+    margin-top: 150px;
+}
+
+#img_digimon {
+    display: block;
+    margin-top: 50px;
+}
