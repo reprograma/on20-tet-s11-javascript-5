@@ -2,22 +2,19 @@ body{
 
 background-image: url('./dig.png');
 font-family: 'Alumni Sans Pinstripe', sans-serif;
-width:100% ;
+width:auto;
 height: 100vh;
 display: table;
-height: 100vh;
 background-position: 30% 45%;
 background-size: cover;
 font-size: 35px;
 margin:0;
-padding: 0
-
+padding: 0;
 
 }
 
-.nome {
+.lista {
     border-radius: 10px solid black;
-    border-bottom: 20px;
     background-color: rgb(79, 78, 78);
 }
 
@@ -42,4 +39,14 @@ p {
     color: white;
     width: 100%;
 
-    }
+}
+
+img {
+    border-radius: 200px;
+    border-bottom: 20px solid rgb(58, 58, 60);
+}
+
+button {
+    font-size: 15px;
+    background-color: rgb(166, 163, 153);
+}
