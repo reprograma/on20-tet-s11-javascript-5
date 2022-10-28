@@ -40,7 +40,7 @@ let buscarDigimonPorNome = async (name) => {
        const response = await fetch(`https://digimon-api.vercel.app/api/digimon/name/${name}`)
        const digimon = await response.json() 
        console.log(digimon[0])
-       card.innerHTML =  criarCard(digimon[0]) 
+       card.innerHTML = criarCard(digimon[0]) 
     } catch (error) {
         console.error('capiturei um erro:', error)  
     }
