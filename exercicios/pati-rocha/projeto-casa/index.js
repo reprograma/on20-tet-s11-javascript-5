@@ -9,20 +9,18 @@ main.insertAdjacentHTML('beforebegin', '<h1>Escolha seu Digimon... </h1>');
 
 function createCards(digimon) {
     return `
-    <div class="card">
+        <div class="card">
         <img class="img-card"src= ${digimon.img} alt="imagem do digimon">
         <h2 class= "title">${digimon.name}</h2>
         <h3 class= "subtitle">${digimon.level}</h3>
-    </div>
-`
+        </div> `
 }
-async function showCards(nome) {
-
+async function showCards(name) {
     try {
         const response = await fetch(`https://digimon-api.vercel.app/api/digimon`)
         const dado = await response.json()
         dado.forEach(digimon => {
-            if (nome === digimon.name) {
+            if (name === digimon.name) {
                 secCards.innerHTML = createCards(digimon)
             }})
     } catch (err) {
@@ -50,20 +48,3 @@ getDigimons()
 
 
 
-
-
-
-// async function getDigimon() {
-//     try {
-//       const resposta = await fetch(`https://dog.ceo/api/breed/${raca}/images/random`)
-//       console.log(resposta)
-//       const dados = await resposta.json()
-//       console.log(dados)
-//       const imagem = document.createElement('img')
-//       imagem.setAttribute('src', dados.message)
-//       container.appendChild(imagem)
-//     }
-//     catch(err) {
-//       console.error('Capturei um erro:', err)
-//     }
-//   }
