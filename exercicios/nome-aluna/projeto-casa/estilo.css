@@ -1,0 +1,42 @@
+* {
+    margin: 0
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(208, 243, 244);
+}
+
+button {
+    background-color: rgb(42, 175, 175);
+    color: antiquewhite;
+    padding: 0.8rem;
+    border-color: rgb(42, 175, 175);
+border-radius:10px;
+box-shadow: none;
+    
+    
+}
+
+#demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 10rem;
+    padding-top: 1rem;
+    
+}
+
+#cards {
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 3rem;
+  color: rgb(50, 126, 137);  
+
+}
+
+#cards > img {
+    border-radius:10px;
+}
