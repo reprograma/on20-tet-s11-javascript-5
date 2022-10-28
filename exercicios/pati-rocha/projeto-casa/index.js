@@ -1,7 +1,7 @@
 const secButtons = document.getElementById('sec-buttons');
 const secCards = document.getElementById('sec-cards')
-const body = document.querySelector('body')
-body.insertAdjacentHTML('beforebegin', '<h1> Digimons </h1>');
+const main = document.querySelector('main')
+main.insertAdjacentHTML('beforebegin', '<h1>Escolha seu Digimon... </h1>');
 // beforebegin - antes do elemento
 // afterbegin - Dentro do elemento, antes de seu primeiro filho (childNode)
 // beforeend - Dentro do elemento, após seu último filho (childNode) 
