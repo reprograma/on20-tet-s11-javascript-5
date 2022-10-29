@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscando digimons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Buscando digimons</h1>
+    <main>
+        <div class="busca_digimon">
+            <input id="type_digimon" type="text">
+            <button onclick="searchByName()">Clique aqui</button><br>
+            <strong>Nome do Digimon:</strong> <span id="origin_name"></span><br>
+            <strong>level:</strong> <span id="nivel"></span><br>
+            <span id="img_digimon"></span>
+        </div>
+        <div class="divisao_digimon">
+            <ul id="fill_list1"></ul>
+            <ul id="fill_list2"></ul>
+            <ul id="fill_list3"></ul> 
+        </div>
+    </main>
+    <script src="./script.js"></script>
+
+    <footer class="autora">
+        <div>
+            <img class="foto_autora" src="./imagem/pri_foto.png" alt="foto_autora">
+        </div>
+
+        <div class="footer_autora">
+            <p> &copy; Copyright Autora Projeto :Priscila Silva</p>
+            <p>Desenvolvedora Front-End</p>
+            <p>Reprograma</p>
+        </div>
+    </footer>
+</body>
+
+</html>
