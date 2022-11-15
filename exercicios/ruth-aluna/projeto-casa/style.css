@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "JetBrains Mono";
+  color: #353b48;
+}
+
+body {
+  background-image: url(fundo2.jpeg);
+}
+h1{
+   padding-top: 20px;
+  font-size: 35px;
+  text-align: center;
+}
+main{
+   height: 95vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 1rem;
+  column-gap: 2rem;
+}
+#lista {
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+  gap: .5rem;
+}
+
+#lista > .buttons {
+  padding: .2rem 0;
+  font-size: 1rem;
+  background-image: linear-gradient(45deg, #eb35d260, #711dd1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tela{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid rgb(183, 7, 236) 10px;
+  border-radius: 10px;
+  height: 85vh;
+  background-color: rgb(183, 7, 236);
+}
+
+img, h3, p{
+  border: solid rgb(183, 7, 236) 4px;
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #eb35d260, #711dd1);
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+font-size: 1.5rem;
+}

@@ -1,18 +1,18 @@
-const list = document.getElementById('list')
-const card = document.getElementById('card')
+const tela = document.getElementById('tela')
+const lista = document.getElementById('lista')
 
-getList = async () => {
+getlista = async () => {
   try {
     const response = await fetch('https://digimon-api.vercel.app/api/digimon');
     const digimonsData = await response.json()
-    renderList(digimonsData)
+    renderlista(digimonsData)
   }
   catch(err) {
     console.error("Capturei um erro: ", err)
   }
 }
 
-let renderList = (digimons) => digimons.forEach((digimon) => list.innerHTML += `<input class="buttons" type="submit" value=${digimon.name} onclick="getDigimon(this.value)">`)
+let renderlista = (digimons) => digimons.forEach((digimon) => lista.innerHTML += `<input class="buttons" type="submit" value=${digimon.name} onclick="getDigimon(this.value)">`)
 
 getDigimon = async (digimon) => {
   try {
@@ -25,10 +25,10 @@ getDigimon = async (digimon) => {
   }
 }
 
-renderDigimon = (digimon) => card.innerHTML = `
+renderDigimon = (digimon) => tela.innerHTML = `
   <img class="" src=${digimon.img}>
   <h3 class="">Name: ${digimon.name}</h3>
   <p class="">Level: ${digimon.level}</p>
 `
 
-getList()
+getlista()
