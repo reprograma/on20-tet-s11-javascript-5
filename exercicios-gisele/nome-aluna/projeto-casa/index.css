@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #353b48;
+  }
+body{
+    margin:0%;
+    padding: 0%;
+    width: 100%;
+    height: 95vh;
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+    padding: 3rem;
+    column-gap: 2rem;
+    align-items: left;
+
+}
+.list-1{
+    display:flex;
+    grid-template-columns: (6, 1fr);
+    gap: .5rem;
+    float: left;
+    width: 70%;
+   
+  }
+#list > .buttons {
+    padding: .7rem 0;
+    font-size: 1.5rem;
+    background-image: linear-gradient(45deg, #c8526960, #af1d3660);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer ;
+   
+
+   position: relative;
+
+  }
+  
+  #card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
