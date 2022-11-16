@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=jetBrains+Monno:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "JetBrains Mono";
+    color: rgb(73, 72, 75);
+    background-color: rgb(206, 170, 122);
+}
+
+body {
+    height: 95vh;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 4fr 1fr; */
+    padding: 5rem;
+    column-gap: 2rem;
+}
+#list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;
+}
+
+#list > .buttons {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    background-color: rgb(211, 180, 151);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 25%;
+    padding: 1.5rem;
+}
+
+.titulo{
+    justify-content: center;
+    display: flex;
+    font-size: 5rem;
+    padding: 1.5rem;
+}
+
+.footer {
+    width: 100%;
+    opacity: 0.5;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p{
+    font-size: 16px;
+    color: #faf8f9;
+}
+
