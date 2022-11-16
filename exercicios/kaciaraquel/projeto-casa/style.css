@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono";
+}
+
+body {
+  height: 95vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 5rem;
+  column-gap: 2rem;
+}
+
+#list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .20rem;
+}
+
+#list>.buttons {
+  padding: .4rem 0;
+  font-size: 1rem;
+  background-image: linear-gradient(45deg, #c6c32f9a, #16865477);
+  border: groove;
+  border-radius: 10px;
+  cursor: grabbing;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.titulo {
+  font-size: 40px;
+  background-image: linear-gradient(to bottom, rgb(23, 155, 45), rgb(198, 179, 41), rgb(13, 34, 87));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  margin: 0 auto;
+  position: absolute;
+  top: 5%;
+  transform: translate(0, -50%);
+  left: 5%;
+
+}
