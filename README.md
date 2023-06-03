@@ -47,7 +47,7 @@ Esta é a 11ª semana da turma online: Todas em Tech on20 - Front-end, nesta aul
 - Manter microfones desligados sempre que alguém estiver falando;
 - Manter as câmeras ligadas o máximo de tempo possível;
 - Antes de começar, vamos organizar nosso setup.
-  * Fork esse [repositório](https://github.com/reprograma/on20-tet-s9-javascript-3) 
+  * Fork esse [repositório](https://github.com/reprograma/reprograma-on23-santander-s11-js-5) 
   * Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
   * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
   * Altere as pastas chamadas "nome-aluna" para o seu nome-sobrenome, estes são os únicos locais onde você deve realizar alterações 
@@ -127,6 +127,8 @@ Esta é a 11ª semana da turma online: Todas em Tech on20 - Front-end, nesta aul
 
 ---
 ### 1.6. Vamo exercitar?
+
+## [hacker()](https://hackear.herokuapp.com/api-docs/)
 
 ---
 ## 2. Arrow Fuctions
@@ -328,9 +330,9 @@ npx create-react-app <nome-do-app>
 ---
 # Exercícios 
 
-## [Exercicio para sala](https://github.com/reprograma/on20-tet-s11-javascript-5/tree/main/exercicios/nome-aluna/para-sala)
+## [Exercicio para sala](https://github.com/reprograma/reprograma-on23-santander-s11-js-5/tree/main/exercicios/nome-aluna/para-sala)
 
-## [Exercicio para casa](https://github.com/reprograma/on20-tet-s11-javascript-5/tree/main/exercicios/nome-aluna/projeto-casa)
+## [Exercicio para casa](https://github.com/reprograma/reprograma-on23-santander-s11-js-5/tree/main/exercicios/nome-aluna/projeto-casa)
 
 ---
 # Referências
